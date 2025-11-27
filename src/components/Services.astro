@@ -1,0 +1,63 @@
+---
+const services = [
+  {
+    title: "Narrative Excavation & Worldbuilding",
+    description: "We don't just write content; we unearth souls. From scriptwriting to character design, we give history a voice that speaks loud and clear.",
+    icon: "📜"
+  },
+  {
+    title: "Augmented Reality (AR) Engineering",
+    description: "The screen is a window, not a wall. We build location-based digital layers that sit perfectly atop the physical world. No clunky hardware, just immersion.",
+    icon: "🔮"
+  },
+  {
+    title: "Strategic Gamification",
+    description: "Turning Visitors into Players. We design loops of curiosity, challenge, and reward that drive foot traffic and deepen engagement.",
+    icon: "🎮"
+  }
+];
+---
+
+<section id="services" class="relative py-24 md:py-32 px-6 bg-void">
+  <div class="max-w-7xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="font-heading text-4xl md:text-5xl font-bold text-rust mb-4 uppercase">
+        Our Craft
+      </h2>
+      <p class="text-xl md:text-2xl text-gray-300 font-body">
+        Old roots. New tools. Here is how we bridge the gap.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="grid md:grid-cols-3 gap-8">
+      {services.map((service) => (
+        <div class="group relative border-2 border-rust p-8 bg-void hover:bg-deep-void hover:border-cyan-electric transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,255,0.2)]">
+          <!-- Icon -->
+          <div class="text-6xl mb-6 group-hover:scale-110 transition-transform duration-300">
+            {service.icon}
+          </div>
+
+          <!-- Title -->
+          <h3 class="font-heading text-xl md:text-2xl font-bold text-cyan-electric mb-4 leading-tight">
+            {service.title}
+          </h3>
+
+          <!-- Description -->
+          <p class="text-gray-300 leading-relaxed">
+            {service.description}
+          </p>
+
+          <!-- Decorative corner -->
+          <div class="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-ochre opacity-50 group-hover:opacity-100 transition-opacity"></div>
+          <div class="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-ochre opacity-50 group-hover:opacity-100 transition-opacity"></div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <!-- Background geometric elements -->
+  <div class="absolute top-20 left-10 w-32 h-32 border border-rust/20 rotate-45"></div>
+  <div class="absolute bottom-20 right-10 w-40 h-40 border border-ochre/20 -rotate-12" style="clip-path: polygon(50% 0%, 0% 100%, 100% 100%);"></div>
+</section>
