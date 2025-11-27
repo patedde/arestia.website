@@ -1,30 +1,22 @@
----
----
-
 <section id="showcase" class="relative py-24 md:py-32 px-6 bg-gradient-to-b from-void to-deep-void">
   <div class="max-w-7xl mx-auto">
-    <!-- Headline -->
     <h2 class="font-heading text-4xl md:text-6xl font-bold text-center mb-6">
       <span class="text-cyan-electric">QbaDoo</span> – The Anti-Boring Guide
     </h2>
 
     <div class="grid md:grid-cols-2 gap-12 items-center mt-16">
-      <!-- Visual Placeholder -->
-      <div class="relative group">
-        <div class="aspect-[9/16] md:aspect-square bg-gradient-to-br from-rust/20 to-cyan-electric/10 border-2 border-rust rounded-lg overflow-hidden flex items-center justify-center hover:border-cyan-electric transition-all duration-300">
-          <div class="text-center p-8">
-            <div class="w-32 h-32 mx-auto mb-4 border-4 border-cyan-electric/50 rounded-full flex items-center justify-center">
-              <span class="text-6xl">🦊</span>
-            </div>
-            <p class="text-cyan-electric font-heading text-xl">App Mockup</p>
-            <p class="text-gray-400 text-sm mt-2">AR Experience Preview</p>
-          </div>
+      
+      <div class="relative group cursor-pointer">
+        <div class="aspect-[9/16] md:aspect-square border-2 border-rust rounded-lg overflow-hidden relative group-hover:border-cyan-electric transition-all duration-300 shadow-lg shadow-rust/10 group-hover:shadow-cyan-electric/20">
+          <img 
+            src="ARBerritta.png" 
+            alt="Berritta AR Guide Character" 
+            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500 ease-out"
+          >
         </div>
-        <!-- Glitch effect on hover -->
-        <div class="absolute inset-0 bg-cyan-electric/5 opacity-0 group-hover:opacity-100 group-hover:animate-glitch transition-opacity pointer-events-none rounded-lg"></div>
-      </div>
 
-      <!-- Content -->
+        <div class="absolute inset-0 bg-cyan-electric/10 mix-blend-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-lg border border-transparent group-hover:border-cyan-electric/50"></div>
+      </div>
       <div class="space-y-6">
         <div class="space-y-4">
           <div class="flex items-start gap-3">
@@ -49,9 +41,8 @@
           </div>
         </div>
 
-        <!-- CTA Link -->
         <a
-          href="https://qbadoo.com"
+          href="https://qbadoo.world"
           target="_blank"
           rel="noopener noreferrer"
           class="inline-block mt-8 px-6 py-3 bg-transparent border-2 border-cyan-electric text-cyan-electric font-heading font-semibold uppercase tracking-wider hover:bg-cyan-electric hover:text-void transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,255,0.5)]"
@@ -62,6 +53,5 @@
     </div>
   </div>
 
-  <!-- Background accent -->
   <div class="absolute top-1/2 right-0 w-64 h-64 bg-blue-tech opacity-5 blur-[100px] rounded-full"></div>
 </section>
